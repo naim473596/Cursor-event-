@@ -1,0 +1,12 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cursor
+{
+    position: absolute;
+    pointer-events: none;
+    transform: 0.5s;
+}

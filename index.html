@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery.vnm.confettiButton.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+  
+<div class="cursor">
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="jquery.vnm.confettiButton.min.js"></script>
+    <script>
+        $(function(){
+            $('.cursor').confettiButton();
+        });
+        $(document).mousemove(function(e){
+            $('.cursor').css({left:e.pageX, top:e.pageY,})
+        })
+
+    </script>
+</body>
+</html>
